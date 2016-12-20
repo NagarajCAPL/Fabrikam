@@ -7,7 +7,7 @@
     using FabrikamFiber.DAL.Data;
     using FabrikamFiber.DAL.Models;
 
-    public class FabrikamFiberDatabaseInitializer : DropCreateDatabaseAlways<FabrikamFiberWebContext>
+     public class FabrikamFiberDatabaseInitializer : CreateDatabaseIfNotExists<FabrikamFiberWebContext>
     {
         protected override void Seed(FabrikamFiberWebContext context)
         {
